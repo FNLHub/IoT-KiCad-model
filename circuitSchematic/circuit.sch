@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:test-cache
+LIBS:circuit-cache
 EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -118,11 +118,9 @@ Wire Wire Line
 NoConn ~ 3900 1800
 NoConn ~ 2900 2000
 Text GLabel 4150 2000 2    50   Output ~ 0
-3.3V
+5V
 Wire Wire Line
 	3900 2000 4150 2000
-Text GLabel 1250 3500 0    50   Input ~ 0
-3.3V
 Wire Wire Line
 	1250 3500 1700 3500
 Text GLabel 5150 1650 1    50   Input ~ 0
@@ -162,4 +160,6 @@ Wire Wire Line
 Connection ~ 2800 1800
 Wire Wire Line
 	2800 1800 2900 1800
+Text GLabel 1250 3500 0    50   Input ~ 0
+5V
 $EndSCHEMATC
