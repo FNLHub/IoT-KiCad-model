@@ -87,10 +87,6 @@ F 3 "~" H 5150 2060 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5150 2450 5150 2800
-Text GLabel 2400 4250 3    50   Output ~ 0
-motor_control
-Wire Wire Line
-	2400 3900 2400 4250
 $Comp
 L Regulator_Switching:LM2575-3.3BT U?
 U 1 1 5C70B602
@@ -118,9 +114,11 @@ Wire Wire Line
 NoConn ~ 3900 1800
 NoConn ~ 2900 2000
 Text GLabel 4150 2000 2    50   Output ~ 0
-5V
+3.3V
 Wire Wire Line
 	3900 2000 4150 2000
+Text GLabel 1250 3500 0    50   Input ~ 0
+3.3V
 Wire Wire Line
 	1250 3500 1700 3500
 Text GLabel 5150 1650 1    50   Input ~ 0
@@ -160,6 +158,36 @@ Wire Wire Line
 Connection ~ 2800 1800
 Wire Wire Line
 	2800 1800 2900 1800
-Text GLabel 1250 3500 0    50   Input ~ 0
-5V
+Text GLabel 2800 4250 3    50   Output ~ 0
+motor_control
+Wire Wire Line
+	2800 3900 2800 4250
+$Comp
+L Device:LED D?
+U 1 1 5C79E6C3
+P 2600 4300
+F 0 "D?" V 2638 4183 50  0000 R CNN
+F 1 "LED" V 2547 4183 50  0000 R CNN
+F 2 "" H 2600 4300 50  0001 C CNN
+F 3 "~" H 2600 4300 50  0001 C CNN
+	1    2600 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2700 3900 2700 4150
+Wire Wire Line
+	2700 4150 2600 4150
+$Comp
+L power:GND #PWR?
+U 1 1 5C79E931
+P 2600 4600
+F 0 "#PWR?" H 2600 4350 50  0001 C CNN
+F 1 "GND" H 2605 4427 50  0000 C CNN
+F 2 "" H 2600 4600 50  0001 C CNN
+F 3 "" H 2600 4600 50  0001 C CNN
+	1    2600 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4450 2600 4600
 $EndSCHEMATC
