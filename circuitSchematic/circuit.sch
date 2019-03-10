@@ -158,10 +158,8 @@ Wire Wire Line
 Connection ~ 2800 1800
 Wire Wire Line
 	2800 1800 2900 1800
-Text GLabel 2800 4250 3    50   Output ~ 0
+Text GLabel 2800 4500 3    50   Output ~ 0
 motor_control
-Wire Wire Line
-	2800 3900 2800 4250
 $Comp
 L Device:LED D?
 U 1 1 5C79E6C3
@@ -190,4 +188,6 @@ F 3 "" H 2600 4600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2600 4450 2600 4600
+Wire Wire Line
+	2800 3900 2800 4500
 $EndSCHEMATC
